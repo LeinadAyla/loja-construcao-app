@@ -1,10 +1,11 @@
+import { Stack } from 'expo-router';
 import { Drawer } from 'expo-router/drawer';
 import { CarrinhoProvider } from '../contexts/CarrinhoContext';
 
 export default function RootLayout() {
   return (
     <CarrinhoProvider>
-      <Drawer
+      <Stack
         screenOptions={{
           headerShown: true,
         }}
